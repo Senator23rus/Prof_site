@@ -6,6 +6,7 @@ urlpatterns = [
     path('news/', news),
     path('contacts/', contacts),
     path('documents/', documents),
-    path('filials/<slug:filial_name>/', filials),
+    path('regions/', regions),
+
 
 ]

@@ -16,5 +16,6 @@ def contacts(request):
 def documents(request):
     return HttpResponse('"Тут будут правовые документы Профсоюза"')
 
-def filials(request, filial_name):
-    return HttpResponse(f"Тут будет отсылка на филиалы</h1><p>{filial_name}</p>")
+def regions(request,):
+    template = loader.get_template('prof_site/regions.html')
+    return HttpResponse(template.render())
